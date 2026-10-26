@@ -1,0 +1,157 @@
+.resume-upload-card {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.resume-dropzone input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.resume-dropzone-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 32px;
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.resume-dropzone-label:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-tint);
+}
+
+.resume-result-card {
+  padding: 26px;
+  margin-bottom: 28px;
+}
+
+.resume-result-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.resume-result-filename {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.resume-result-source {
+  font-size: 12.5px;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-tint);
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.resume-result-note {
+  font-size: 12.5px;
+  color: var(--color-ink-faint);
+}
+
+.resume-result-sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.resume-list-block h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+
+.resume-list-success h4 { color: var(--color-success); }
+.resume-list-danger h4 { color: var(--color-danger); }
+.resume-list-primary h4 { color: var(--color-primary-dark); }
+
+.resume-list-block ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--color-ink);
+}
+
+.resume-skills h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--color-ink-muted);
+  margin-bottom: 10px;
+}
+
+.resume-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resume-skill-tag {
+  background: var(--color-surface-sunken);
+  color: var(--color-ink);
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.resume-history-section h2 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.resume-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resume-history-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+}
+
+.resume-history-filename {
+  font-weight: 600;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.resume-history-date {
+  font-size: 12.5px;
+  color: var(--color-ink-faint);
+  margin-top: 2px;
+}
+
+@media (max-width: 720px) {
+  .resume-result-sections {
+    grid-template-columns: 1fr;
+  }
+}

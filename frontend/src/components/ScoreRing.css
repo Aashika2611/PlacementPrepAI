@@ -1,0 +1,23 @@
+.score-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.score-ring-progress {
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.score-ring-text {
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--color-ink);
+}
+
+.score-ring-label {
+  font-size: 12.5px;
+  color: var(--color-ink-muted);
+  text-align: center;
+  font-weight: 500;
+}
